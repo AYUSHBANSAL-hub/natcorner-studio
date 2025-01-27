@@ -74,15 +74,18 @@ const LoginPage = () => {
 
           {/* Social Login Buttons */}
           <div className="space-y-4">
-            <button className="w-full flex items-center justify-center bg-gray-700 py-3 rounded-lg hover:bg-gray-600">
+            <button className="w-full flex items-center justify-center bg-gradient-to-r from-[#353E4A] to-[#1A2555] py-3 rounded-lg hover:bg-gray-600 -skew-x-6 border border-[#E5E4E24D]">
+                
               <FaGoogle className="mr-2 text-red-500" />
               Login with Google
             </button>
-            <button className="w-full flex items-center justify-center bg-gray-700 py-3 rounded-lg hover:bg-gray-600">
+            <button className="w-full flex items-center justify-center bg-gradient-to-r from-[#353E4A] to-[#1A2555] py-3 rounded-lg hover:bg-gray-600 -skew-x-6 border border-[#E5E4E24D]">
+                
               <FaApple className="mr-2 text-gray-400" />
               Login with Apple
             </button>
-            <button className="w-full flex items-center justify-center bg-gray-700 py-3 rounded-lg hover:bg-gray-600">
+            <button className="w-full flex items-center justify-center bg-gradient-to-r from-[#353E4A] to-[#1A2555] py-3 rounded-lg hover:bg-gray-600 -skew-x-6 border border-[#E5E4E24D]">
+                
               <FaFacebook className="mr-2 text-blue-600" />
               Login with Facebook
             </button>
