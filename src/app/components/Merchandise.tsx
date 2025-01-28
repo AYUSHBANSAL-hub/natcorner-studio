@@ -16,29 +16,36 @@ const Merchandise = () => {
         <div className="flex items-center">
           {/* Merchandise Grid */}
           <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 flex-1">
-            {merchandise.map((item) => (
+            {merchandise.slice(0,4).map((item) => (
               <div
-                key={item.id}
-                className=" rounded-lg overflow-hidden flex flex-col items-center mt-5"
-              >
-                <div>
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                
-                    objectFit="cover"
-                    className="w-[248px] h-[314px] rounded-[7px]"
-                  />
-                </div>
-                <div className="text-center pb-4">
-                  <div className="text-white text-xl font-bold font-Lexend">{item.title}</div>
-                  <button className="mt-2 px-16 py-4 text-[#E5E4E2] opacity-50 hover:opacity-100 rounded-md border border-gray-500 hover:bg-gray-600 transition -skew-x-6">
-                    <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 skew-x-6">
-                      Purchase
-                    </span>
-                  </button>
-                </div>
+              key={item.id}
+              className="rounded-lg overflow-hidden flex flex-col items-center mt-5 h-[430px]" // Fixed height for consistency
+            >
+              {/* Product Image */}
+              <div>
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  objectFit="cover"
+                  className="w-[248px] h-[314px] rounded-[7px]"
+                />
               </div>
+
+              {/* Product Title & Button */}
+              <div className="relative text-center flex flex-col justify-between items-center w-full flex-grow">
+                {/* Title with Fixed Height */}
+                <div className="text-white text-xl font-bold font-Lexend mt-4 min-h-[50px] flex items-center">
+                  {item.title}
+                </div>
+
+                {/* Purchase Button */}
+                <button className="mt-2 px-16 py-4 text-[#E5E4E2] opacity-50 hover:opacity-100 rounded-md border border-gray-500 hover:bg-gray-600 transition -skew-x-6">
+                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 skew-x-6">
+                    Purchase
+                  </span>
+                </button>
+              </div>
+            </div>
             ))}
             <div className="absolute right-0 top-0">
               <Image alt="" src={merc_gradient} />

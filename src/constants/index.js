@@ -54,13 +54,11 @@ import {
   TheTiger,
   TheWhiteOcean,
   ThePadmavyuham,
-  HeroImg2
+  HeroImg2,
+  MerchandiseHero,
 } from "../assets";
 
-import {
-  AiFillInstagram,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 import {
   SiDjango,
@@ -105,7 +103,7 @@ import {
   SiMicrosoftazure,
 } from "react-icons/si";
 
-import {AiOutlineBook} from "react-icons/ai"
+import { AiOutlineBook } from "react-icons/ai";
 
 import { FaHardHat, FaRust } from "react-icons/fa";
 
@@ -114,7 +112,6 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { FaGolang } from "react-icons/fa6";
 
 import { DiCss3, DiJava, DiMsqlServer, DiRuby } from "react-icons/di";
-
 
 /* 
 #########################
@@ -228,7 +225,8 @@ export const etfList = [
     category: "All ETFs",
     date: "JAN 09, 2025",
     title: "New Gameplay Trailer Reveals The Brigand’s Arsenal",
-    description: "Discover insights into the latest ETFs and their performance.",
+    description:
+      "Discover insights into the latest ETFs and their performance.",
     link: "/etfs/brigand-arsenal",
     image: etf_img1, // Replace with the actual image path
   },
@@ -255,31 +253,109 @@ export const etfList = [
 export const merchandise = [
   {
     id: "merch-1",
-    title: "T-Shirt | Natcorner",
+    title: "T-Shirt | Natcorner Classic",
     price: "$25.00",
     link: "/merchandise/tshirt-1",
     image: Merchandise, // Replace with the actual image path
+    category: "T-Shirts",
+    color: "Black",
+    description: "Classic black cotton T-shirt with the Natcorner logo.",
   },
   {
     id: "merch-2",
-    title: "T-Shirt | Natcorner",
+    title: "T-Shirt | Natcorner White Edition",
     price: "$25.00",
     link: "/merchandise/tshirt-2",
     image: Merchandise, // Replace with the actual image path
+    category: "T-Shirts",
+    color: "White",
+    description:
+      "Premium white cotton T-shirt with a minimalist Natcorner design.",
   },
   {
     id: "merch-3",
-    title: "T-Shirt | Natcorner",
+    title: "T-Shirt | Natcorner Navy Blue",
     price: "$25.00",
     link: "/merchandise/tshirt-3",
     image: Merchandise, // Replace with the actual image path
+    category: "T-Shirts",
+    color: "Navy Blue",
+    description:
+      "Soft and breathable navy blue T-shirt, perfect for casual wear.",
   },
   {
     id: "merch-4",
-    title: "T-Shirt | Natcorner",
+    title: "T-Shirt | Natcorner Gray Edition",
     price: "$25.00",
     link: "/merchandise/tshirt-4",
     image: Merchandise, // Replace with the actual image path
+    category: "T-Shirts",
+    color: "Gray",
+    description: "Lightweight gray T-shirt with a modern, minimalist design.",
+  },
+  {
+    id: "merch-5",
+    title: "Hoodie | Natcorner Black",
+    price: "$45.00",
+    link: "/merchandise/hoodie-1",
+    image: Merchandise, // Replace with the actual image path
+    category: "Hoodies",
+    color: "Black",
+    description:
+      "Cozy black hoodie with soft fleece lining and Natcorner branding.",
+  },
+  {
+    id: "merch-6",
+    title: "Hoodie | Natcorner White Edition",
+    price: "$45.00",
+    link: "/merchandise/hoodie-2",
+    image: Merchandise, // Replace with the actual image path
+    category: "Hoodies",
+    color: "White",
+    description:
+      "Stylish white hoodie with a front pocket and adjustable hood.",
+  },
+  {
+    id: "merch-7",
+    title: "Cap | Natcorner Snapback",
+    price: "$20.00",
+    link: "/merchandise/cap-1",
+    image: Merchandise, // Replace with the actual image path
+    category: "Caps",
+    color: "Black",
+    description:
+      "Classic black snapback cap with an embroidered Natcorner logo.",
+  },
+  {
+    id: "merch-8",
+    title: "Cap | Natcorner Adjustable",
+    price: "$20.00",
+    link: "/merchandise/cap-2",
+    image: Merchandise, // Replace with the actual image path
+    category: "Caps",
+    color: "Blue",
+    description: "Adjustable blue cap with a curved brim for a stylish look.",
+  },
+  {
+    id: "merch-9",
+    title: "Mug | Natcorner Coffee Mug",
+    price: "$15.00",
+    link: "/merchandise/mug-1",
+    image: Merchandise, // Replace with the actual image path
+    category: "Accessories",
+    color: "White",
+    description: "Ceramic coffee mug with a sleek Natcorner design.",
+  },
+  {
+    id: "merch-10",
+    title: "Sticker Pack | Natcorner",
+    price: "$10.00",
+    link: "/merchandise/sticker-pack-1",
+    image: Merchandise, // Replace with the actual image path
+    category: "Accessories",
+    color: "Multicolor",
+    description:
+      "Set of 10 unique Natcorner stickers to personalize your space.",
   },
 ];
 
@@ -296,7 +372,7 @@ export const callToActionMerchandise = {
 // Other sections remain the same...
 
 import { AiFillFacebook, AiFillYoutube } from "react-icons/ai";
-import { FaTwitter,FaLinkedinIn,FaArrowUp } from "react-icons/fa";
+import { FaTwitter, FaLinkedinIn, FaArrowUp } from "react-icons/fa";
 export const footer = {
   logo: {
     label: "Natcorner Studio",
@@ -337,7 +413,7 @@ export const footer = {
   ],
   backToTop: {
     label: "Back to Top",
-    icon: <FaArrowUp /> // Replace with an actual icon path, if applicable
+    icon: <FaArrowUp />, // Replace with an actual icon path, if applicable
   },
 };
 
@@ -387,7 +463,7 @@ export const featuredGames = [
 export const gamesSection = {
   heading: "Featured Games",
   description: "Explore our latest and most exciting games.",
-  image:HeroImg2
+  image: HeroImg2,
 };
 
 /* 
@@ -424,11 +500,7 @@ export const gameDetails = [
     description: `Dive into a haunting narrative of survival and mystery. "The White Ocean" brings you to a submerged city filled with secrets and terrors lurking beneath the waves. Unravel the story of its enigmatic downfall while battling otherworldly forces.`,
     image: TheTiger, // Replace with actual main image path
     // video: "path/to/white-ocean-video.mp4", // Replace with the video path
-    screenshots: [
-      TheWhiteOcean,
-      ThePadmavyuham,
-      news_img1,
-    ],
+    screenshots: [TheWhiteOcean, ThePadmavyuham, news_img1],
     button: {
       label: "Share your interests",
       action: "/games/the-white-ocean/share",
@@ -442,4 +514,11 @@ export const gamesPageConfig = {
 };
 
 // Login
-export const loginImageCarousel=[loginhero,HeroImg2, TheBrigand];
+export const loginImageCarousel = [loginhero, HeroImg2, TheBrigand];
+
+// Merchandise Page
+
+export const MerchandisePage = {
+  image: MerchandiseHero,
+  heading: "Buy your favourite item in this corner",
+};

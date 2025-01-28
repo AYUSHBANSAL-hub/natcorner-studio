@@ -75,8 +75,10 @@ import TheTiger from "./TheTiger.svg"
 import TheWhiteOcean from "./TheWhiteOcean.svg"
 import ThePadmavyuham from "./ThePadmavyuham.svg"
 import HeroImg2 from "./HeroImg2.svg";
+import MerchandiseHero from "./MerchandiseHero.svg";
 
 export {
+  MerchandiseHero,
   HeroImg2,
   TheBrigand,
   TheBrigand2,
