@@ -9,6 +9,7 @@ const Footer: React.FC<Props> = () => {
   return (
     <footer className="relative w-full h-[310px] bg-[#2C2F33] text-white">
       {/* Follow Us Section */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#1E90FF] to-[#8A2BE2]"></div>
       <div className="absolute left-[78px] top-[102px]">
         <h3 className="font-lexend text-[20.4px] font-normal leading-[25px] uppercase mb-[18.14px]">
           Follow Us

@@ -40,7 +40,14 @@ import {
   assets,
   natcorner,
   brigand,
-  loginhero
+  loginhero,
+  Merchandise,
+  news_img1,
+  news_img2,
+  news_img3,
+  etf_img1,
+  etf_img2,
+  etf_img3,
 } from "../assets";
 
 import {
@@ -169,7 +176,7 @@ export const latestNews = [
     title: "New Gameplay Trailer Reveals The Brigand’s Arsenal",
     description: "Get a sneak peek into the new gameplay features and weapons.",
     link: "/news/the-brigand-arsenal",
-    image: "path/to/news-1-image.png", // Replace with the actual image path
+    image: news_img1, // Replace with the actual image path
   },
   {
     id: "news-2",
@@ -178,17 +185,17 @@ export const latestNews = [
     title: "Experience Next-Level Tactical Combat",
     description: "Discover how The Brigand redefines tactical FPS gameplay.",
     link: "/news/next-level-tactical-combat",
-    image: "path/to/news-2-image.png", // Replace with the actual image path
+    image: news_img2, // Replace with the actual image path
   },
   {
     id: "news-3",
-    category: "The Brigand",
+    category: "The Tiger",
     date: "JAN 09, 2025",
     title: "Intense Multiplayer Mode Announced for Upcoming FPS",
     description:
       "Prepare for adrenaline-pumping action in The Brigand’s multiplayer mode.",
     link: "/news/multiplayer-mode-announcement",
-    image: "path/to/news-3-image.png", // Replace with the actual image path
+    image: news_img3, // Replace with the actual image path
   },
 ];
 
@@ -216,16 +223,16 @@ export const etfList = [
     title: "New Gameplay Trailer Reveals The Brigand’s Arsenal",
     description: "Discover insights into the latest ETFs and their performance.",
     link: "/etfs/brigand-arsenal",
-    image: "path/to/etf-1-image.png", // Replace with the actual image path
+    image: etf_img1, // Replace with the actual image path
   },
   {
     id: "etf-2",
-    category: "All ETFs",
+    category: "Nifty 50",
     date: "JAN 09, 2025",
     title: "New Gameplay Trailer Reveals The Brigand’s Arsenal",
     description: "Explore the next level of ETF market analysis.",
     link: "/etfs/next-level-analysis",
-    image: "path/to/etf-2-image.png", // Replace with the actual image path
+    image: etf_img2, // Replace with the actual image path
   },
   {
     id: "etf-3",
@@ -234,7 +241,7 @@ export const etfList = [
     title: "New Gameplay Trailer Reveals The Brigand’s Arsenal",
     description: "Learn about ETF market trends and updates.",
     link: "/etfs/market-trends",
-    image: "path/to/etf-3-image.png", // Replace with the actual image path
+    image: etf_img3, // Replace with the actual image path
   },
 ];
 
@@ -244,28 +251,28 @@ export const merchandise = [
     title: "T-Shirt | Natcorner",
     price: "$25.00",
     link: "/merchandise/tshirt-1",
-    image: "path/to/merch-1-image.png", // Replace with the actual image path
+    image: Merchandise, // Replace with the actual image path
   },
   {
     id: "merch-2",
     title: "T-Shirt | Natcorner",
     price: "$25.00",
     link: "/merchandise/tshirt-2",
-    image: "path/to/merch-2-image.png", // Replace with the actual image path
+    image: Merchandise, // Replace with the actual image path
   },
   {
     id: "merch-3",
     title: "T-Shirt | Natcorner",
     price: "$25.00",
     link: "/merchandise/tshirt-3",
-    image: "path/to/merch-3-image.png", // Replace with the actual image path
+    image: Merchandise, // Replace with the actual image path
   },
   {
     id: "merch-4",
     title: "T-Shirt | Natcorner",
     price: "$25.00",
     link: "/merchandise/tshirt-4",
-    image: "path/to/merch-4-image.png", // Replace with the actual image path
+    image: Merchandise, // Replace with the actual image path
   },
 ];
 

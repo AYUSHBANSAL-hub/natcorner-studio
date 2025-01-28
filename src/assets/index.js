@@ -60,8 +60,24 @@ import assets from "./assets.png";
 import natcorner from "./natcorner.svg"
 import brigand from "./brigand.svg"
 import loginhero from "./loginhero.svg";
+import Merchandise from "./merchandise.svg";
+import merc_gradient from "./merc_gradient.svg"
+import news_img1 from "./news_img1.svg"
+import news_img2 from "./news_img2.svg"
+import news_img3 from "./news_img3.svg"
+import etf_img1 from "./etf_img1.svg"
+import etf_img2 from "./etf_img2.svg"
+import etf_img3 from "./etf_img3.svg"
 
 export {
+  news_img1,
+  news_img2,
+  news_img3,
+  etf_img1,
+  etf_img2,
+  etf_img3,
+  merc_gradient,
+  Merchandise,
   loginhero,
   natcorner,
   quotes,
