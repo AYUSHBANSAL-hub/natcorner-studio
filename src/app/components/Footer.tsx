@@ -42,20 +42,20 @@ const Footer: React.FC<Props> = () => {
         <div
           className="absolute left-[902px] top-[111px] w-[14px] h-[14px]"
           style={{
-            backgroundImage: 'url(C.png)', // Add the correct file path
+            backgroundImage: "url(C.png)", // Add the correct file path
           }}
         />
       </div>
 
       {/* Back to Top Section */}
       <div className="absolute right-[125px] top-[88px] flex flex-col items-center gap-[15px]">
-        <div className="w-[95px] h-[74px] flex items-center justify-center text-[40px] border border-[#E5E4E2] rounded-[7px] relative">
-          {footer.backToTop.icon}
-        </div>
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="font-lexend text-[15px] font-normal leading-[25px] text-white"
         >
+          <div className="w-[95px] h-[74px] flex items-center justify-center text-[40px] border border-[#E5E4E2] rounded-[7px] relative">
+            {footer.backToTop.icon}
+          </div>
           Back to Top
         </button>
       </div>

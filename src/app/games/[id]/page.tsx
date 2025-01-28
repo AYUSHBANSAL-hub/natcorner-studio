@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Footer, GradientButton, Navbar } from "@/app/components";
+import GameCarousel from "@/app/components/GameCarousel";
 
 const GameDetailPage = () => {
   const { id } = useParams(); // Get the game ID from the URL
@@ -76,39 +77,7 @@ const GameDetailPage = () => {
       </div>
 
       {/* Video & Screenshots Carousel */}
-      <div className="container mx-auto px-6">
-        <Slider {...settings} className="w-full">
-          {/* Video Thumbnail */}
-          <div className="relative w-full h-[400px] flex items-center justify-center">
-            <Image
-              src={game.screenshots[0]}
-              alt="Video Thumbnail"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              {/* <Link href={#} passHref>
-                <div className="w-20 h-20 bg-black bg-opacity-50 flex items-center justify-center rounded-full cursor-pointer hover:bg-opacity-70 transition">
-                  <FaPlay className="text-white text-3xl" />
-                </div>
-              </Link> */}
-            </div>
-          </div>
-          {/* Screenshots */}
-          {game.screenshots.map((screenshot, index) => (
-            <div key={index} className="w-full h-[400px] relative">
-              <Image
-                src={screenshot}
-                alt={`Screenshot ${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      <GameCarousel/>
 
       <Footer />
     </div>
