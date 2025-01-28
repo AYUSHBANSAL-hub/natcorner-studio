@@ -10,9 +10,9 @@ const GradientButton = ({ text, className }: GradientButtonProps) => {
     <button
       className={`relative w-48 h-11 bg-gradient-to-r from-buttongradientpurple to-buttongradientblue text-white text-lg font-lexend rounded-lg transform -skew-x-6 ${className}`}
     >
-      <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 skew-x-6">
+      <div className=" skew-x-6">
         {text}
-      </span>
+      </div>
     </button>
   );
 };

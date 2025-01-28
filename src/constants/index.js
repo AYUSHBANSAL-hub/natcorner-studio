@@ -49,6 +49,7 @@ import {
   etf_img2,
   etf_img3,
   TheBrigand,
+  TheBrigand2,
   TheLost8,
   TheTiger,
   TheWhiteOcean,
@@ -404,13 +405,14 @@ export const gameDetails = [
     id: "the-brigand",
     title: "The Brigand",
     description: `As global powers vie for dominance in a war-torn future, a rogue paramilitary group known only as "Brigands" emerges from the shadows, challenging the world's fragile order. Branded as terrorists by the governments they once served, an elite squad of disavowed operatives must fight to expose a web of lies and betrayal buried deep within the heart of a secret global conspiracy. Outnumbered and outgunned, they wage a relentless battle for survival, seeking redemption in a world that has turned against them.`,
-    image: "path/to/brigand-main-image.png", // Replace with actual main image path
-    video: "path/to/brigand-video.mp4", // Replace with the video path
+    image: TheBrigand2, // Replace with actual main image path
+    // video: "path/to/brigand-video.mp4", // Replace with the video path
     screenshots: [
-      "path/to/brigand-screenshot-1.png", // Screenshot 1
-      "path/to/brigand-screenshot-2.png", // Screenshot 2
-      "path/to/brigand-screenshot-3.png", // Screenshot 3
+      TheBrigand, // Screenshot 1
+      HeroImg2, // Screenshot 2
+      TheLost8, // Screenshot 3
     ],
+
     button: {
       label: "Share your interests",
       action: "/games/the-brigand/share", // Action for the button
@@ -420,12 +422,12 @@ export const gameDetails = [
     id: "the-white-ocean",
     title: "The White Ocean",
     description: `Dive into a haunting narrative of survival and mystery. "The White Ocean" brings you to a submerged city filled with secrets and terrors lurking beneath the waves. Unravel the story of its enigmatic downfall while battling otherworldly forces.`,
-    image: "path/to/white-ocean-main-image.png", // Replace with actual main image path
-    video: "path/to/white-ocean-video.mp4", // Replace with the video path
+    image: TheTiger, // Replace with actual main image path
+    // video: "path/to/white-ocean-video.mp4", // Replace with the video path
     screenshots: [
-      "path/to/white-ocean-screenshot-1.png",
-      "path/to/white-ocean-screenshot-2.png",
-      "path/to/white-ocean-screenshot-3.png",
+      TheWhiteOcean,
+      ThePadmavyuham,
+      news_img1,
     ],
     button: {
       label: "Share your interests",
