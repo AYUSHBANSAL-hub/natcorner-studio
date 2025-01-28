@@ -52,6 +52,7 @@ const Navbar: React.FC<Props> = () => {
         </ul>
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-[0.5px] bg-gradient-to-r from-[#1E90FF] to-[#8A2BE2]"></div>
     </nav>
   );
 };

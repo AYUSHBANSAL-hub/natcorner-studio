@@ -340,7 +340,6 @@ export const footer = {
   },
 };
 
-
 /* 
 #########################
 #########################
@@ -389,7 +388,6 @@ export const gamesSection = {
   description: "Explore our latest and most exciting games.",
   image:HeroImg2
 };
-
 
 /* 
 #########################
@@ -441,7 +439,5 @@ export const gamesPageConfig = {
   detailPageLink: "/games/:id", // Route pattern for dynamic pages
 };
 
-
 // Login
-
-export const loginImageCarousel=[loginhero,HeroImg2, TheBrigand]
+export const loginImageCarousel=[loginhero,HeroImg2, TheBrigand];

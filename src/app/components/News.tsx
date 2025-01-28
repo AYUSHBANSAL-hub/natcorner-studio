@@ -15,12 +15,12 @@ const News = () => {
 
   return (
     <div className="bg-[#2C2F33] py-12 text-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-[80px] px-6">
         {/* Section Title */}
         <h2 className="text-center text-[#e5e4e2] text-[56px] font-semibold font-Lexend mb-4">
           LATEST NEWS & ARTICLES
         </h2>
-
+        
         {/* Category Tabs */}
         <div className="flex h-[78px] justify-center space-x-6 mb-12 -skew-x-6 bg-[#1A1F36] rounded-lg border border-blue-500 shadow-lg">
           {newsCategories.map((category, index) => (
