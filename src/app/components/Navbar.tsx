@@ -13,13 +13,15 @@ const Navbar: React.FC<Props> = () => {
     <nav className="fixed top-0 left-0 w-full backdrop-blur-sm bg-gradient-to-r from-[rgba(44,47,51,0.75)] to-[rgba(26,31,54,0.75)] text-white px-6 py-6 z-20">
       <div className="container relative h-8 mx-auto flex items-center justify-between  ">
         {/* Logo */}
-        <div className="flex items-center justify-end h-full flex-grow-[1]">
+        <div className="flex items-center justify-end h-full flex-grow-[1 cursor-pointer]">
+        <Link href={"/"}  legacyBehavior>
           <Image
             src={natcorner} // Replace with the actual logo path
             alt="Natcorner Studio Logo"
             className="h-full object-contain" // Ensures the image scales within its container
             priority
           />
+           </Link>
         </div>
 
         {/* Navigation Links */}

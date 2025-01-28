@@ -8,5 +8,16 @@ import Merchandise from "./Merchandise";
 import Footer from "./Footer";
 import GradientButton from "./GradientButton";
 import OutlineButton from "./OutlineButton";
+import GameListing from "./GameListing";
 
-export { Navbar, Hero, News, ETFs, Merchandise, Footer,GradientButton, OutlineButton };
+export {
+  Navbar,
+  Hero,
+  News,
+  ETFs,
+  Merchandise,
+  Footer,
+  GradientButton,
+  OutlineButton,
+  GameListing,
+};

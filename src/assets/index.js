@@ -68,8 +68,20 @@ import news_img3 from "./news_img3.svg"
 import etf_img1 from "./etf_img1.svg"
 import etf_img2 from "./etf_img2.svg"
 import etf_img3 from "./etf_img3.svg"
+import TheBrigand from "./TheBrigand.svg"
+import TheLost8 from "./TheLost8.svg"
+import TheTiger from "./TheTiger.svg"
+import TheWhiteOcean from "./TheWhiteOcean.svg"
+import ThePadmavyuham from "./ThePadmavyuham.svg"
+import HeroImg2 from "./HeroImg2.svg";
 
 export {
+  HeroImg2,
+  TheBrigand,
+  TheLost8,
+  TheTiger,
+  TheWhiteOcean,
+  ThePadmavyuham,
   news_img1,
   news_img2,
   news_img3,

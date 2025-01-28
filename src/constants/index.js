@@ -48,6 +48,12 @@ import {
   etf_img1,
   etf_img2,
   etf_img3,
+  TheBrigand,
+  TheLost8,
+  TheTiger,
+  TheWhiteOcean,
+  ThePadmavyuham,
+  HeroImg2
 } from "../assets";
 
 import {
@@ -122,22 +128,22 @@ export const navLinks = [
   {
     id: "games",
     title: "Games",
-    link: "/games",
+    link: "/pages/Games",
   },
   {
     id: "etf",
     title: "ETF",
-    link: "/etf",
+    link: "/pages/etf",
   },
   {
     id: "brand-merchandise",
     title: "Brand Merchandise",
-    link: "/merchandise",
+    link: "/pages/merchandise",
   },
   {
     id: "login",
     title: "Login",
-    link: "/login",
+    link: "/pages/Login",
     isButton: true,
   },
 ];
@@ -344,35 +350,36 @@ export const footer = {
 #########################
 #########################
 */
+
 export const featuredGames = [
   {
     id: "game-1",
     title: "The Brigand",
-    image: "path/to/brigand-image.png", // Replace with the actual image path
+    image: TheBrigand, // Replace with the actual image path
     link: "/games/the-brigand",
   },
   {
     id: "game-2",
     title: "The White Ocean",
-    image: "path/to/white-ocean-image.png", // Replace with the actual image path
+    image: TheWhiteOcean, // Replace with the actual image path
     link: "/games/the-white-ocean",
   },
   {
     id: "game-3",
     title: "The Tiger",
-    image: "path/to/tiger-image.png", // Replace with the actual image path
+    image: TheTiger, // Replace with the actual image path
     link: "/games/the-tiger",
   },
   {
     id: "game-4",
     title: "Padmavyuham",
-    image: "path/to/padmavyuham-image.png", // Replace with the actual image path
+    image: ThePadmavyuham, // Replace with the actual image path
     link: "/games/padmavyuham",
   },
   {
     id: "game-5",
     title: "The Lost 8",
-    image: "path/to/lost-8-image.png", // Replace with the actual image path
+    image: TheLost8, // Replace with the actual image path
     link: "/games/the-lost-8",
   },
 ];
@@ -380,6 +387,7 @@ export const featuredGames = [
 export const gamesSection = {
   heading: "Featured Games",
   description: "Explore our latest and most exciting games.",
+  image:HeroImg2
 };
 
 
@@ -436,4 +444,4 @@ export const gamesPageConfig = {
 
 // Login
 
-export const loginImageCarousel=[loginhero,smollan]
+export const loginImageCarousel=[loginhero,HeroImg2, TheBrigand]
