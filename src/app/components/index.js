@@ -10,6 +10,7 @@ import GradientButton from "./GradientButton";
 import OutlineButton from "./OutlineButton";
 import GameListing from "./GameListing";
 import PurpleGradient from "./PurpleGradient";
+import ETFsListing from "./ETFsListing";
 
 export {
   Navbar,
@@ -21,5 +22,6 @@ export {
   GradientButton,
   OutlineButton,
   GameListing,
-  PurpleGradient
+  PurpleGradient,
+  ETFsListing
 };

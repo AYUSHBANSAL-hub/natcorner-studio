@@ -56,6 +56,7 @@ import {
   ThePadmavyuham,
   HeroImg2,
   MerchandiseHero,
+  HeroETFs
 } from "../assets";
 
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
@@ -131,7 +132,7 @@ export const navLinks = [
   {
     id: "etf",
     title: "ETF",
-    link: "/pages/etf",
+    link: "/pages/ETFs",
   },
   {
     id: "brand-merchandise",
@@ -521,4 +522,21 @@ export const loginImageCarousel = [loginhero, HeroImg2, TheBrigand];
 export const MerchandisePage = {
   image: MerchandiseHero,
   heading: "Buy your favourite item in this corner",
+};
+
+
+
+/* 
+#########################
+#########################
+#########################
+      ETF Page
+#########################
+#########################
+#########################
+*/
+
+export const ETFsPage = {
+  image: HeroETFs,
+  heading: "Explore ETFs at this corner",
 };

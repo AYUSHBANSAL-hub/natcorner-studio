@@ -76,8 +76,10 @@ import TheWhiteOcean from "./TheWhiteOcean.svg"
 import ThePadmavyuham from "./ThePadmavyuham.svg"
 import HeroImg2 from "./HeroImg2.svg";
 import MerchandiseHero from "./MerchandiseHero.svg";
+import HeroETFs from "./HeroETFs.svg";
 
 export {
+  HeroETFs,
   MerchandiseHero,
   HeroImg2,
   TheBrigand,
